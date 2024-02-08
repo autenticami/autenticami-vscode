@@ -1,0 +1,25 @@
+{
+  "name": "autenticami",
+  "displayName": "autenticami",
+  "description": "Autenticami a Multi-Account and Multi-Tenant Policy-Based Access Control Platform to enable a modern Identity-Based Access Control.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "autenticami",
+      "aliases": ["autenticami", "autenticami"],
+      "extensions": ["auth"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "autenticami",
+      "scopeName": "source.auth",
+      "path": "./syntaxes/autenticami.tmLanguage.json"
+    }]
+  }
+}
