@@ -3,30 +3,152 @@
 	"name": "autenticami",
 	"patterns": [
 		{
-			"include": "#keywords"
+		  "include": "#keywords"
 		},
 		{
-			"include": "#strings"
+		  "include": "#import"
+		},
+		{
+		  "include": "#strings"
+		},
+		{
+		  "include": "#operator"
+		},
+		{
+		  "include": "#comments"
+		},
+		{
+		  "include": "#expression"
+		},
+		{
+		  "include": "#class-declaration"
+		},
+		{
+		  "include": "#variable-declaration"
 		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.autenticami",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+	  ],
+	  "repository": {
+		"variable-declaration": {
+		  "patterns": [
+			{
+			  "name": "variable.parameter",
+			  "match": "\\b[a-z][A-Za-z0-9]*\\b"
+			}
+		  ]
+		},
+		"import": {
+		  "patterns": [
+			{
+			  "name": "keyword.control.import.autenticami",
+			  "match": "\\b(import)\\b"
+			}
+		  ]
 		},
 		"strings": {
-			"name": "string.quoted.double.autenticami",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.autenticami",
-					"match": "\\\\."
+		  "name": "string.quoted.double.autenticami",
+		  "begin": "\"",
+		  "end": "\"",
+		  "patterns": [
+			{
+			  "name": "constant.character.escape.autenticami",
+			  "match": "\\\\."
+			}
+		  ]
+		},
+		"comments": {
+		  "name": "comment.line.number-sign.autenticami",
+		  "match": "#.*$"
+		},
+	
+		"class-declaration": {
+		  "patterns": [
+			{
+			  "name": "meta.class.autenticami",
+			  "begin": "\\b(policy|permission|user|role|trust)\\b",
+			  "end": "\\{",
+			  "beginCaptures": {
+				"1": {
+				  "name": "storage.type.class.autenticami"
 				}
-			]
+			  },
+			  "endCaptures": {
+				"0": {
+				  "name": "punctuation.section.class.end.autenticami"
+				}
+			  },
+			  "patterns": [
+				{
+				  "include": "#class-name"
+				},
+				{
+				  "include": "#class-inheritance"
+				},
+				{
+				  "include": "#class-body"
+				}
+			  ]
+			}
+		  ]
+		},
+	
+		"class-name": {
+		  "name": "entity.name.type.class.autenticami",
+		  "match": "\\b([A-Z][a-zA-Z0-9]*)\\b"
+		},
+	
+		"class-inheritance": {
+		  "name": "entity.other.inherited-class.autenticami",
+		  "match": "\\b(extends)\\b",
+		  "captures": {
+			"1": {
+			  "name": "keyword.other.inherited-class.autenticami"
+			}
+		  }
+		},
+	
+		"class-body": {
+		  "patterns": [
+			{
+			  "include": "#resources"
+			},
+			{
+			  "include": "#actions"
+			},
+			{
+			  "include": "#conditions"
+			}
+		  ]
+		},
+		"resources": {
+		  "name": "keyword.other.resource.autenticami",
+		  "match": "\\b(resources)\\b"
+		},
+		"actions": {
+		  "name": "keyword.other.actions.autenticami",
+		  "match": "\\b(actions)\\b"
+		},
+		"conditions": {
+		  "name": "keyword.other.conditions.autenticami",
+		  "match": "\\b(condition)\\b"
+		},
+	
+		"operator": {
+		  "match": "(?x)\n    \\b(?<!\\.)\n      (?:\n        (and | or | in | is)                         (?# 1)\n      )\n    (?!\\s*:)\\b\n\n    | (&)                          (?# 2)\n\n    | (< | > | == | !=)                          (?# 3)\n\n    | (=)                                                 (?# 4)\n",
+		  "captures": {
+			"1": {
+			  "name": "keyword.operator.logical.autenticami"
+			},
+			"2": {
+			  "name": "keyword.operator.bitwise.autenticami"
+			},
+			"3": {
+			  "name": "keyword.operator.comparison.autenticami"
+			},
+			"4": {
+			  "name": "keyword.operator.assignment.autenticami"
+			}
+		  }
 		}
-	},
+	  },
 	"scopeName": "source.auth"
 }
