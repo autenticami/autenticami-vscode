@@ -9,7 +9,7 @@
     "url": "https://github.com:autenticami/autenticami-vscode"
   },
   "icon": "assets/autenticami.png",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -29,7 +29,7 @@
     }],
     "grammars": [{
       "language": "autenticami",
-      "scopeName": "source.auth",
+      "scopeName": "source.aut",
       "path": "./syntaxes/autenticami.tmLanguage.json"
     }]
   }
