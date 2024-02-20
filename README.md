@@ -8,4 +8,4 @@ The Autenticami policy language extension for Visual Studio Code supports syntax
 
 Autenticami is a policy language designed to define policies, specifying actions that can be performed on specific resources. Additionally it is possible to specify identities, permissions associated with identities and trusted delegations
 
-![autenticami](https://raw.githubusercontent.com/autenticami/autenticami-vscode/main/assets/autenticami-vscode-sample.png)
+![autenticami](https://raw.githubusercontent.com/autenticami/autenticami-vscode/main/assets/autenticami-vscode-screenshot.png)
