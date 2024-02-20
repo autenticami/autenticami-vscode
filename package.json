@@ -14,7 +14,7 @@
     "vscode": "^1.86.0"
   },
   "scripts": {
-    "deploy": " vsce publish --baseImagesUrl https://raw.githubusercontent.com/autenticami/autenticami-authz"
+    "deploy": "vsce publish"
   },
   "categories": [
     "Programming Languages"
