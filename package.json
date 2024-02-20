@@ -9,7 +9,7 @@
     "url": "https://github.com:autenticami/autenticami-vscode"
   },
   "icon": "assets/autenticami-icon.png",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.86.0"
   },
