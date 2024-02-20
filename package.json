@@ -2,19 +2,19 @@
   "name": "autenticami",
   "displayName": "Autenticami",
   "description": "Autenticami a Multi-Account and Multi-Tenant Policy-Based Access Control Platform to enable a modern Identity-Based Access Control.",
-  "publisher": "autenticami-community",
+  "publisher": "autenticami",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com:autenticami/autenticami-vscode"
   },
   "icon": "assets/autenticami-icon.png",
-  "version": "0.0.8",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.86.0"
   },
   "scripts": {
-    "deploy": " vsce publish --baseImagesUrl https://github.com/autenticami/autenticami-authz"
+    "deploy": " vsce publish --baseImagesUrl https://raw.githubusercontent.com/autenticami/autenticami-authz"
   },
   "categories": [
     "Programming Languages"
