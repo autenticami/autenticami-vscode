@@ -1,4 +1,4 @@
-# Autenticami policy language for Visual Studio Code
+# Autenticami Policy Language for Visual Studio Code
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/autenticami/autenticami-vscode/main/assets/logo/transparent-txt/transparent-txt-2lines.png" class="center" width="400px" height="auto"/>
