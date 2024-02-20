@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com:autenticami/autenticami-vscode"
   },
-  "icon": "assets/autenticami.png",
+  "icon": "assets/autenticami.svg",
   "version": "0.0.3",
   "engines": {
     "vscode": "^1.86.0"
@@ -23,8 +23,8 @@
       "extensions": ["aut", "auth"],
       "configuration": "./language-configuration.json",
       "icon": {
-        "light": "./assets/autenticami.png",
-        "dark": "./assets/autenticami.png"
+        "light": "./assets/autenticami.svg",
+        "dark": "./assets/autenticami.svg"
       }
     }],
     "grammars": [{
