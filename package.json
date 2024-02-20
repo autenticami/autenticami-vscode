@@ -9,12 +9,12 @@
     "url": "https://github.com:autenticami/autenticami-vscode"
   },
   "icon": "assets/autenticami-icon.png",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "engines": {
     "vscode": "^1.86.0"
   },
   "scripts": {
-    "deploy": " vsce package --baseImagesUrl https://github.com/autenticami/autenticami-authz"
+    "deploy": " vsce publish --baseImagesUrl https://github.com/autenticami/autenticami-authz"
   },
   "categories": [
     "Programming Languages"

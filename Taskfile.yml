@@ -1,6 +1,11 @@
 version: '3'
 
+includes:
+  wks: ../../Taskfile.yml
+
 tasks:
+  push:
+    - task: "wks:push"
   publish:
     cmds:
       - vsce publish
