@@ -23,7 +23,7 @@
     "languages": [{
       "id": "autenticami",
       "aliases": ["autenticami", "autenticami"],
-      "extensions": ["aut", "auth"],
+      "extensions": ["apl", "aut", "auth"],
       "configuration": "./language-configuration.json",
       "icon": {
         "light": "./assets/autenticami-ext.png",
