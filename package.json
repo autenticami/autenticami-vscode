@@ -1,7 +1,7 @@
 {
   "name": "autenticami",
   "displayName": "Autenticami",
-  "description": "Autenticami a Multi-Account and Multi-Tenant Authorization Provider (OpenSource + SaaS & SelfHosted).",
+  "description": "Autenticami a Multi-Account and Multi-Tenant Authorization Provider (OpenSource + SaaS and SelfHosted).",
   "publisher": "autenticami",
   "license": "Apache-2.0",
   "repository": {
