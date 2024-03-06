@@ -1,7 +1,7 @@
 {
   "name": "autenticami",
   "displayName": "Autenticami",
-  "description": "Autenticami a Multi-Account and Multi-Tenant Policy-Based Access Control Platform to enable a modern Identity-Based Access Control.",
+  "description": "Autenticami a Multi-Account and Multi-Tenant Authorization Provider (OpenSource + SaaS & SelfHosted).",
   "publisher": "autenticami",
   "license": "Apache-2.0",
   "repository": {
